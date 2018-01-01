@@ -1,5 +1,5 @@
 # This example uses the digits dataset to illustrate how to find the best k
-# value
+# value using for loop
 # Outcome: A plot of k vs prediction accuracy
 
 # Import necessary modules
