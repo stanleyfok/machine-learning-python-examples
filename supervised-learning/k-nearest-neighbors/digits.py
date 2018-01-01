@@ -1,3 +1,7 @@
+# This example use the digits dataset to illustrate how to use the
+# KNeighborsClassifier and spliting the data to training set and testing set
+# Outcome: the predicted digits using the testing data set
+
 # Import necessary modules
 from sklearn import datasets
 from sklearn.neighbors import KNeighborsClassifier

@@ -1,3 +1,8 @@
+# This example use the boston dataset to illustrate how to use the
+# LinearRegression linear model
+# Outcome: A scatter plot of training and testing data (only using number of
+# rooms and price)
+
 # Import necessary modules
 from sklearn import datasets
 from sklearn.linear_model import LinearRegression
@@ -9,8 +14,8 @@ import matplotlib.pyplot as plt
 boston_ds = datasets.load_boston()
 
 # set X and y
-X = boston_ds['data']
-y = boston_ds['target']
+X = boston_ds.data
+y = boston_ds.target
 
 # extract the number of rooms column
 X_rooms = X[:, 5].reshape(-1, 1)

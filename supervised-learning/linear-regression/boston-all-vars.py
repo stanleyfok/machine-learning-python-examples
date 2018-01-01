@@ -1,3 +1,7 @@
+# This example use the boston dataset to illustrate how to use the
+# LinearRegression linear model
+# Outcome: the regressor score and root mean square error
+
 # Import necessary modules
 from sklearn import datasets
 from sklearn.linear_model import LinearRegression
@@ -9,8 +13,8 @@ import numpy as np
 boston_ds = datasets.load_boston()
 
 # set X and y
-X = boston_ds['data']
-y = boston_ds['target']
+X = boston_ds.data
+y = boston_ds.target
 
 # reshape data
 y = y.reshape(-1, 1)

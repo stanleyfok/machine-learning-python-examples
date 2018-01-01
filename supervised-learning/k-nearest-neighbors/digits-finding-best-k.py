@@ -1,3 +1,7 @@
+# This example uses the digits dataset to illustrate how to find the best k
+# value
+# Outcome: A plot of k vs prediction accuracy
+
 # Import necessary modules
 from sklearn import datasets
 from sklearn.neighbors import KNeighborsClassifier
