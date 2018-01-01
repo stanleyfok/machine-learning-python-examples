@@ -7,7 +7,7 @@ from sklearn import datasets
 from sklearn.linear_model import Lasso
 import matplotlib.pyplot as plt
 
-# Load the digits dataset: digits
+# Load the boston dataset
 boston_ds = datasets.load_boston()
 
 # set X and y

@@ -10,7 +10,7 @@ from sklearn.model_selection import cross_val_predict
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Load the digits dataset: digits
+# Load the boston dataset
 boston_ds = datasets.load_boston()
 
 # set X and y

@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Load the digits dataset: digits
+# Load the digits dataset
 digits = datasets.load_digits()
 
 # Create feature and target arrays

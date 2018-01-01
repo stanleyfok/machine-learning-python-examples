@@ -1,11 +1,13 @@
-# This example use the digits dataset to illustrate how to use the
-# KNeighborsClassifier and spliting the data to training set and testing set
-# Outcome: the predicted digits using the testing data set
+# This example use the digits dataset to illustrate how to show the confusion
+# matrix and classification report
+# Outcome: confusion matrix and classification report
 
 # Import necessary modules
 from sklearn import datasets
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 
 # Load the digits dataset
 digits = datasets.load_digits()
@@ -26,8 +28,9 @@ knn = KNeighborsClassifier(n_neighbors=7)
 # Fit the classifier to the training data
 knn.fit(X_train, y_train)
 
-# Print the accuracy
-print('score: {}'.format(knn.score(X_test, y_test)))
+# Predict the labels of the test data: y_pred
+y_pred = knn.predict(X_test)
 
-# predict the result of testing data
-print(knn.predict(X_test))
+# Generate the confusion matrix and classification report
+print(confusion_matrix(y_test, y_pred))
+print(classification_report(y_test, y_pred))

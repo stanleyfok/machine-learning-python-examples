@@ -27,7 +27,7 @@ def display_plot(cv_scores, cv_scores_std):
     plt.show()
 
 
-# Load the digits dataset: digits
+# Load the boston dataset
 boston_ds = datasets.load_boston()
 
 # set X and y
